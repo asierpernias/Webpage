@@ -1,0 +1,258 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #172019;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(242, 201, 76, 0.28), transparent 28rem),
+    linear-gradient(135deg, #f7f4ee 0%, #eef6f0 52%, #f5efe4 100%);
+  overflow-x: hidden;
+}
+
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #ddd2c2;
+  background-color: rgba(255, 250, 240, 0.85);
+  backdrop-filter: blur(14px);
+}
+
+nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+nav a {
+  position: relative;
+  margin-left: 18px;
+  color: #172019;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 2px;
+  background-color: #1f7a4d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  transform: scaleX(1);
+}
+
+.hero {
+  max-width: 1100px;
+  min-height: 80vh;
+  margin: auto;
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.tag {
+  color: #1f7a4d;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1;
+  margin: 0;
+}
+
+h2 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+p {
+  line-height: 1.7;
+  color: #5c665f;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 22px;
+  background-color: #145238;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: skewX(-18deg);
+  transition: left 0.45s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(20, 82, 56, 0.2);
+}
+
+.btn:hover::before {
+  left: 130%;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 25px;
+  border: 1px solid #ddd2c2;
+  border-radius: 10px;
+  background-color: rgba(255, 250, 240, 0.86);
+  box-shadow: 0 18px 45px rgba(23, 32, 25, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--shine-x, 50%) var(--shine-y, 20%),
+    rgba(242, 201, 76, 0.32),
+    transparent 34%
+  );
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgba(31, 122, 77, 0.6);
+  box-shadow: 0 24px 65px rgba(23, 32, 25, 0.16);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card h3 {
+  font-size: 26px;
+  margin-top: 0;
+}
+
+.card a {
+  color: #145238;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero-card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #145238;
+  color: white;
+}
+
+.hero-card p,
+.hero-card span {
+  color: #dfeee5;
+}
+
+.contact {
+  margin-bottom: 40px;
+  background-color: #fffaf0;
+  border-radius: 10px;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(32px);
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+}

@@ -1,0 +1,97 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio para Macondo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <canvas class="starfield" aria-hidden="true"></canvas>
+
+  <header class="header">
+    <nav>
+      <h2>Mi portfolio para Macondo</h2>
+
+      <div>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content reveal">
+        <p class="tag">Macondo · Hack Club</p>
+        <h1>Hola, soy Asier, maker de nacimiento</h1>
+        <p>
+          Este es el portfolio desde donde tengo pensado mostrar mis distintos
+          proyectos, entre los cuales está Orion, actualmente en progreso, y otras
+          ideas que tengo ya en mente.
+        </p>
+        <a class="btn" href="#proyectos">Ver proyectos</a>
+      </div>
+
+      <div class="card hero-card reveal">
+        <p>Proyecto destacado</p>
+        <h2>Orion</h2>
+        <span>En desarrollo</span>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section reveal">
+      <p class="tag">Sobre mí</p>
+      <h2>Maker desde la cabeza hasta los pies</h2>
+      <p>
+        Sin duda, mi mayor pasión es convertir ideas en proyectos, mejorar mis
+        habilidades diseñando, programando y compartiendo lo que construyo con
+        el resto.
+      </p>
+    </section>
+
+    <section id="proyectos" class="section reveal">
+      <p class="tag">Proyectos</p>
+      <h2>Mis proyectos para Macondo</h2>
+
+      <div class="grid">
+        <article class="card project-card reveal">
+          <h3>Orion</h3>
+          <p>
+            Orion es un proyecto en el que estoy trabajando actualmente y que me
+            tiene muy emocionado. Es un asistente basado en IA que busca agilizar
+            la navegación online.
+          </p>
+          <a href="https://github.com/asierpernias/Voice_Pilot.v1/blob/main/README.md" target="_blank" rel="noopener">
+            Ver proyecto
+          </a>
+        </article>
+
+        <article class="card project-card reveal">
+          <h3>Proyecto 2</h3>
+          <p>
+            Descripción del proyecto 2. Aquí puedes explicar qué hace, qué problema
+            resuelve y qué tecnologías estás usando.
+          </p>
+          <a href="#">Añadir enlace a proyecto 2</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact reveal">
+      <p class="tag">Contacto</p>
+      <h2>¿Quieres ponerte en contacto conmigo?</h2>
+      <p>
+        Si quieres saber más sobre mis proyectos o simplemente charlar, no dudes
+        en contactarme.
+      </p>
+      <a class="btn" href="mailto:asierpernias@gmail.com">Enviar correo</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
