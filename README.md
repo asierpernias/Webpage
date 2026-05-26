@@ -4,13 +4,10 @@
 Este es mi portfolio personal para Macondo de Hack Club. La web está pensada para mostrar mis proyectos, ideas y avances como maker, incluyendo proyectos como **Orion**.
 
 ## Demo
+https://asierpernias.github.io/Webpage./
 
-Añade aquí el enlace cuando publiques la web:
-
-```txt
-https://tuusuario.github.io/tu-repositorio/
-Sobre el proyecto
-La página incluye:
+## Sobre el proyecto
+### La página incluye:
 
 Una sección de presentación personal
 Una sección sobre mí
@@ -24,7 +21,7 @@ Tecnologías usadas
 HTML
 CSS
 JavaScript
-Estructura
+## Estructura
 .
 ├── web_page.html
 ├── styles.css
