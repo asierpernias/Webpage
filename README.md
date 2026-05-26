@@ -22,8 +22,9 @@ HTML
 CSS
 JavaScript
 ## Estructura
-.
+````
 ├── web_page.html
 ├── styles.css
 ├── script.js
 └── README.md
+```
