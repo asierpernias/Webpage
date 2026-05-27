@@ -1,27 +1,27 @@
 
 # Portfolio para Macondo
 
-Este es mi portfolio personal para Macondo de Hack Club. La web está pensada para mostrar mis proyectos, ideas y avances como maker, incluyendo proyectos como **Orion**.
+This is my personal portfolio for Macondo by Hack Club. The website is designed to showcase my projects, ideas, and progress as a maker, including projects such as...
+ **Orion**.
 
 ## Demo
 https://asierpernias.github.io/Webpage./
 
-## Sobre el proyecto
-### La página incluye:
+## About the project
+### What does it includes?:
 
-Una sección de presentación personal
-Una sección sobre mí
-Una sección de proyectos
-Un proyecto destacado: Orion
-Una sección de contacto
-Animaciones con JavaScript
-Fondo animado con canvas
-Efectos interactivos en las tarjetas
-Tecnologías usadas
+A pesonal section about me
+A dedicated section for the projects Ill be developing for Macondo
+A highlighted project: Macondo 
+A way to contact me 
+Animations with JavaScript
+Animated background with
+Interactive effects on the tagets
+Used technologies:
 HTML
 CSS
 JavaScript
-## Estructura
+### Structure
 ````
 ├── web_page.html
 ├── styles.css
